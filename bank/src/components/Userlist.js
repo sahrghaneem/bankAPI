@@ -9,10 +9,9 @@ const ListOfUsers = () => {
     }, [])
 
     const getData = ()=>{
-        axios.get('https://bank-api1.herokuapp.com/api/bank/all')
-        .then(res=>{
-          console.log(res);
-     //     setGetUsersData(res.data)
+        axios.get('https://bank-api1.herokuapp.com/api/bank/all').then(res=>{
+        console.log(res);
+      setUsers(res.data)
         })
       }
 return(
@@ -21,7 +20,7 @@ return(
            {
                users.length >0?
                 users.map((u) => {
-                return <div key={u.id}>Name : {u.name} <br/> Country : {u.country} <br/> passportId:{u.passportId}<br/>Username : {u.username} <br/> Cash : {u.cash}<br/> Credit : {u.credit}<br/><br/></div>
+                return <div key={u.id}>Name : {u.name} <br/> Country : {u.country} <br/> passportId:{u.passportId}<br/>Username : {u.username} <br/> Cash : {u.cash}<br/> Credit : {u.cridet} <br/> ID : {u._id}<br/> <br/> </div>
                 })
                 :"loading..."
             }

@@ -8,8 +8,8 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  list-style: none;
+  margin-left: 10px;
   box-sizing: border-box;
 }
 
@@ -21,7 +21,6 @@ body {
 
 .App {
   text-align: center;
-
 }
 
 .inpt{
@@ -29,7 +28,6 @@ body {
   display:flex;
   justify-content: space-around;
   align-items: center;
-  list-style: none;
   background: var(--primary-color);
 }
 

@@ -32,8 +32,8 @@ const TransferMoney = () => {
 
         <div>
             {console.log(user)}
-            From : <input className="inpt" value={user.from} onChange={TransferHandler} type="number" name={'from'}  /><br/>
-            To : <input className="inpt" value={user.to} onChange={TransferHandler} type="number" name={'to'}  /><br/>
+            From : <input className="inpt" value={user.from} onChange={TransferHandler} type="text" name={'from'}  /><br/>
+            To : <input className="inpt" value={user.to} onChange={TransferHandler} type="text" name={'to'}  /><br/>
 
            
             Transfer Money : <input className="inpt" value={user.cash} type="number" onChange={TransferHandler} name={'cash'} /> 
