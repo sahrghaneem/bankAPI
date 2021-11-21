@@ -11,7 +11,7 @@ const Depositing = ({passportId,cash,credit}) => {
     })
 
     const Deposit = () =>{
-        axios.put('http://127.0.0.1:5000/cash/:userId'+user.passportId, user)
+        axios.put('https://bank-api1.herokuapp.com/api/bank/cash/:userId'+user.passportId, user)
                 .then((res) => {
                     alert("User added successfully")
                 }).catch((err)=>{
@@ -20,7 +20,7 @@ const Depositing = ({passportId,cash,credit}) => {
     }
 
     const AddCridet = () =>{
-        axios.put('http://127.0.0.1:5000/cridet/:userId'+user.passportId, user)
+        axios.put('https://bank-api1.herokuapp.com/api/bank/cridet/:userId'+user.passportId, user)
                 .then((res) => {
                     alert("User added successfully")
                 }).catch((err)=>{

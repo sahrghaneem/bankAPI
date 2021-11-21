@@ -12,7 +12,7 @@ const AddNewUser  = ({name,country,id,username,passportId}) => {
 
     const addUser = () => {
             if(user.name && user.country && user.username && user.passportId) {
-            axios.post('http://127.0.0.1:5000/new/', user)
+            axios.post('https://bank-api1.herokuapp.com/api/bank/new/', user)
                 .then((res) => {
                     if (res.status === 209) {
                         alert("User added successfully")
