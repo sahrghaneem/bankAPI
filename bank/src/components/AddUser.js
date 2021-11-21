@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-const AddNewUser  = ({name,country,id,username,passportId}) => {
+const AddNewUser  = () => {
     const [users, setUsers] = React.useState([]);
     const [user, setUser] = React.useState({
         name: '',

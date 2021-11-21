@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-const Depositing = ({passportId,cash,credit}) => {
+const Depositing = () => {
     
     const [user,setUser] = React.useState({
       
